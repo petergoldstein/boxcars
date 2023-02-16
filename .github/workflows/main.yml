@@ -22,7 +22,7 @@ jobs:
           - jruby
     steps:
     - run: apt-get install ubuntu-dev-tools
-      if: {{ $matrix.ruby-version == jruby }}
+      if: {{ $matrix.ruby-version == 'jruby' }}
     - uses: actions/checkout@v3
     - name: Set up Ruby ${{ matrix.ruby-version }}
       uses: ruby/setup-ruby@v1
