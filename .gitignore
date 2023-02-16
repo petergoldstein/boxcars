@@ -3,4 +3,5 @@
 .git
 .rspec_status
 pkg
+Gemfile.lock
 example.rb
